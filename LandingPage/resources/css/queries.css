@@ -60,11 +60,16 @@
         width: 100%;
     }
     .main-nav{
-        visibility: hidden; /*ẩn header width:0; opacity:0;*/
+        display: none;
+        margin-top: 10px;
+         /*visibility: hidden; ẩn header width:0; opacity:0;*/
     }
     .logo{
         width: 350px;
         margin-left: 12%;
+    }
+    .mobile-nav-icon{
+        opacity: 1;
     }
     h1{
         word-spacing: 2px;
@@ -132,6 +137,13 @@
     }
 }
 
+/* small phone from 481px to 570px*/
+@media only screen and (max-width:570px){
+    .mobile-nav-icon{
+        right: 45px;
+    }
+}
+
 /* small phone from 0 to 480px*/
 @media only screen and (max-width:480px){
     html{
@@ -174,5 +186,16 @@
     form{
         width: 90%;
         margin-left: 5%;
+    }
+    .mobile-nav-icon{
+        top: 92px;
+        right: 10px;
+    }
+    .sticky .logo{
+        width: 200px;
+        margin-top: -25px;
+    }
+    .main-nav{
+        padding-top: 25px;
     }
 }

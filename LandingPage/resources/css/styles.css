@@ -128,6 +128,7 @@ header{
     float: left;
     margin-left: 70px;
     margin-top: -50px;
+    margin-bottom: -100px;
 }
 
 .main-nav{
@@ -164,6 +165,43 @@ header{
     width: 1140px;
 }
 
+/*------------Mobile nav icon-------------*/
+
+.mobile-nav-icon{
+    font-size: 200%;
+    color: #6b95bd;
+    position: absolute;
+    top: 55px;
+    right: 100px;
+    opacity: 0;
+}
+
+.sticky .mobile-nav-icon{
+    top: 30px;
+}
+
+/*------------Sticky-------------*/
+
+.sticky{
+    background-color: rgba(22,33,64,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    padding-bottom: 10px;
+    /* height: 70px; */
+}
+
+.sticky .logo{
+    width: 250px;
+    margin-top: -40px;
+    margin-bottom: -70px;
+}
+
+.sticky .main-nav{
+    margin-top: 30px;
+}
 
 /*------------About section-------------*/
 
